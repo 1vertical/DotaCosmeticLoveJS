@@ -1,0 +1,138 @@
+
+
+* {
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Navigation Styling*/
+nav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; /*black*/
+    background-color: #571442; /*Maroon*/
+    border-radius: 6px;
+    overflow-x: hidden;
+    padding: 12px;
+}
+
+    nav a {
+        font-size: 25px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 6px 6px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 1s;
+    }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding: 14px 16px;
+            transition: 0.2s;
+        }
+
+main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) 
+{
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+/*The cards*/
+article {
+    background-color: #B0E66A; /*Lime green*/
+    background-color: #d2b939;
+    /*border: 1px solid #B0E66A;*/
+    border-top: 2px white solid;
+    border-bottom: 3px #571442 solid;
+    border-radius: 10px;
+    padding: 0px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 66%;
+}
+
+/*DISCLAIMER*/
+.alert {
+    background-color: #e02853; /*red*/
+}
+
+body {
+    background-color: #63E1F2; /*green*/
+    background-color: #7a433f;
+}
+
+
+/*HEADERS*/
+h1 {
+    color: white;
+    font-size: 4em;
+    font-family: 'STIX Two Math', serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    color: white;
+    font-family: 'STIX Two Math', serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    background-color: rgba(255,255,255, 0.45);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+/*BUTTONS AND STATE*/
+
+button {
+    border: none;
+    /*box-shadow: 2px 2px #571442;*/
+    box-shadow: 2px 2px #571442, 4px 4px #571442;
+    border-radius: 6px;
+    background-color: #9d723d;
+    color: white;
+    padding: 10px;
+    transition: 0.2s;
+    padding: 8px;
+    margin: 4px 0px 0px 4px;
+    transition: 0.8s;
+}
+
+    /*button.copy {
+        background-color: rgba(255,255,255, 0.5);
+        color: black;
+    }*/
+
+    button:hover {
+        background-color: #e02853;
+        box-shadow: none;
+        transition: 0.25s ease-out;
+    }
+
+.center {
+    text-align:center;
+    margin: auto;
+    padding: 10px;
+}
