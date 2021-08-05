@@ -1,7 +1,9 @@
 
 
 * {
-    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Segoe UI', 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
 }
 
 /*Navigation Styling*/
@@ -42,9 +44,9 @@ nav {
             transition: 0.2s;
         }
 
-main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-}
+/*main {*/
+    /*margin-left: 160px; /* Same as the width of the sidenav */
+/*}*/
 
 @media screen and (max-height: 450px) 
 {
@@ -79,7 +81,8 @@ article {
 
 body {
     background-color: #63E1F2; /*green*/
-    background-color: #7a433f;
+    background-color: #7a433f; /*wine red*/
+    background-color: #333;
 }
 
 

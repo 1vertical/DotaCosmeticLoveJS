@@ -3,24 +3,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dota 2 Cosmetic Love</title>
 
-    <!--STYLES-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=STIX+Two+Math&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="container">
+<body class="container-fluid">
     <header>
         <h1>
-            Dota 2 - Cosmetic Love <h2>Change Theme: </h2><button>Beta</button><button>Modern</button>
+            Dota 2 - Cosmetic Love <h2>Change Theme: </h2><button>Beta</button><button>Modern</button> <button>Spreadsheet</button>
         </h1>
     </header>
     <main>
+
+        <!--<nav>
+            <ul>
+                <li>Introduction</li>
+                <li>Table Design Changes</li>
+                <li>Introduction</li>
+                <li>Introduction</li>
+                <li>Introduction</li>
+                <li>Introduction</li>
+                <li>Introduction</li>
+            </ul>
+        </nav>-->
+
         <header>
             <div>
                 <h2>Introduction</h2>
@@ -31,9 +51,11 @@
             </div>
 
             <div>
-                
+
             </div>
         </header>
+
+
 
 
         <div>
@@ -41,8 +63,7 @@
 
             <h3>Added</h3>
             <ul>
-                <li>Added Total Workshop Sets column - this tracks the approxinmate total sets found on the workshop. Note: Contains clutter items.</li>
-                <li></li>
+                <li>Added new columns.</li>
             </ul>
 
             <h3>Changed</h3>
@@ -52,47 +73,121 @@
             </ul>
             <h3>Removed</h3>
             <ul>
-                <li>"Broken down?" column is removed. All heroes are released.</li>
-                <li></li>
+                <li>"Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment.</li>
             </ul>
 
             <h2>Notes</h2>
             <ul>
                 <li>Golden number means this hero has a(n) item(s) with duplicates that has gold textures.</li>
                 <li>Add more items after the time of publishing for a realistic count of items - I count by hand and don't web crawl the source site and it is possible that items were added after I was done counting.</li>
+                <li>Sets doesn't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item for all slots, etc.</li>
+                <li>Each hero has their own amount of slots - this can inflate/deflate the ratio. This means it can affect the actual total number of items per hero.</li>
+                <li></li>
+                <li>There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
+                <li>
+                    Column explanations:
+                    <ul>
+                        <li>Hero - The hero in question.</li>
+                        <li>Slots - The total amount of slots for the character. Note: this may have been changed and will be indicated in parenthesis.</li>
+                        <li>Has Arcana - The hero has an arcana item or not.</li>
+                        <li>Has Persona - The hero has a personal item or not.</li>
+                        <li>Workshop Sets (Present) - The current total sets that is on the workshop. Note: This is an unreliable number as there are sets with items that are: not items (junk) and items that don't fit with the aesthetic of the game.</li>
+                        <li>Published Sets (Past) - The last recorded total of published sets.</li>
+                        <li>Published Sets (Present) - The current recorded total of published sets.</li>
+                        <li>Published Sets (Difference)  - The total difference between old and new published sets.</li>
+                        <li>Total Love (Past) - The last recorded total of published items.</li>
+                        <li>Total Love (Present) - The current recorded total of published items.</li>
+                        <li>Total Love (Difference) - The total difference between old and new published items.</li>
+                        <li>Notes - Notes about the particular hero's items, trends, general information regarding design, etc.</li>
+                    </ul>
+                </li>
+
             </ul>
 
+            <h2>Statistics</h2>
+            
             <table>
                 <tr>
                     <th>Hero</th>
-                    <th>Current Total Hero Slots</th>
-                    <th>Current Published Sets/Bundles</th>
-                    <th>Total Workshop Sets/Bundles</th>
-                    <th>Difference in Sets/Bundles</th>
-                    <th></th>
-                    <th>Total Love (Total Items)</th>
+                    <th>Slots</th>
+                    <th>Has Arcana</th>
+                    <th>Has Persona</th>
+                    <th>Workshop Sets (Present)</th>
+                    <th>Published Sets (Past)</th>
+                    <th>Published Sets (Present)</th>
+                    <th>Published Sets (Difference)</th>
+                    <th>Total Love (Past)</th>
+                    <th>Notes</th>
                 </tr>
 
                 <tr>
-                    <td><img class="heroPortrait" src="#" alt="Hero portrait of XXX" />Tiny</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <!--Hero-->
+                    <td>
+                        <img class="imghero str agi int" src="images/heroes/HERO.jpg" alt="Hero portrait of XXX" />
+                    </td>
+
+                    <!--Slots-->
+                    <td>
+                    </td>
+
+                    <!--HasArcana-->
+                    <td>
+                    </td>
+
+                    <!--HasPersona-->
+                    <td>
+                    </td>
+
+                    <!--WorkshopSetsPresent-->
+                    <td>
+                    </td>
+
+                    <!--PublishedSetsPast-->
+                    <td>
+                    </td>
+
+                    <!--PublishedSetsPresent-->
+                    <td>
+                    </td>
+
+                    <!--PublishedSetsPresent-->
+                    <td>
+                    </td>
+
+                    <!--TotalLovePast-->
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                Past
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                                Present
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                                Difference
+                            </div>
+                        </div>
+                    </td>
+
+                    <!--Notes-->
                     <td>
                         Tiny takes a crap ton of time to make sets for. Creatives essentially create 4 heroes (levels of growth) for a single hero. To make it fair, you can take all the numbers here and multiply it by 4
                         to get a fair'ish result.
                     </td>
                 </tr>
             </table>
+
+            <a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Link to previous post.</a>
         </div>
-
-
     </main>
     <footer>
-        <h2>Conclusions</h2>
-        <p>6 years ago, the game was still shaping up, and boy, did it! Previously</p>
+        <h2>Conclusion</h2>
+        <p>Around 6 years ago, the game was still shaping up, and boy, did it! Previously, the art style was defined and creatives needed to adhere the design documents. It is interesting to see how the overall art style has 
+        changed over the years. 
+        
+        Thanks for viewing, another update after 6 years! Maybe!
+        <br />All images are copyrighted by Valve Software.
+        <br />Disclaimer: The purpose of the website is to demonstrate statistical information regarding Dota 2's "hat economy" and improve my web development skill.</p>
     </footer>
 
     <script src="js/script.js"></script>
