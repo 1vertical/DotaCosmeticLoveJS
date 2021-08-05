@@ -1,12 +1,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Game Machine | A game idea generator</title>
-    
+    <title>Dota 2 Cosmetic Love</title>
+
     <!--STYLES-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,295 +14,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=STIX+Two+Math&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
+    <header>
+        <h1>
+            Dota 2 - Cosmetic Love <h2>Change Theme: </h2><button>Beta</button><button>Modern</button>
+        </h1>
+    </header>
+    <main>
+        <header>
+            <div>
+                <h2>Introduction</h2>
+                <p>
+                    Greetings folks! I'm back. I've made a new <em>"analysis"</em> of Dota 2's wardrobe. What has changed since the last... *checks publish date of last analysis* ...6 years?! What. Anyway, without further
+                    wasting time. Here ya go! :)
+                </p>
+            </div>
 
-    <nav>
-        <a href="#home" class="active">&#128190; Game Machine</a>
-        <a href="#disclaimer">Disclaimer</a>
-        <a href="#gameNoun">Game/Noun</a>
-        <a href="#gameVerb">Game/Verb</a>
-        <a href="#gameTime">Game/Time</a>
-        <a href="#revGameTheme">Game/Theme</a>
-        <a href="#gameNounGenre">Game/Noun/Genre</a>
-        <a href="#genreUniv">Genre/Univ</a>
-        <a href="#genreNoun">Genre/Theme</a>
-        <a href="#genreTime">Genre/Time</a>
-        <a href="#genreTheme">Genre/Theme</a>
-        <a href="#gpgf">Game/Punk/Genre/Features</a>
-        <a href="#revGameUniv">Revive/Game/Univ</a>
+            <div>
+                
+            </div>
+        </header>
 
-        <a href="#revGame">Rev/Game</a>
-        <a href="#revGenre">Rev/Genre</a>
-        <a href="#magnus">Mangnus Conceptu</a>
-        <a href="#story">Story</a>
-        <a href="#artStyles">Art Style</a>
-        <a href="#request">Requests</a>
-        <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>-->
-        <div class="center">
-            <!--SUPPORT-->
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="business" value="Z3UF4BMPFXGNL" />
-                <input type="hidden" name="no_recurring" value="0" />
-                <input type="hidden" name="item_name" value="Service Donation" />
-                <input type="hidden" name="currency_code" value="USD" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_ZA/i/scr/pixel.gif" width="1" height="1" />
-            </form>
 
-            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#e02853', 'K3K35C9GH'); kofiwidget2.draw();</script>
+        <div>
+            <h2>Table Design Changes</h2>
+
+            <h3>Added</h3>
+            <ul>
+                <li>Added Total Workshop Sets column - this tracks the approxinmate total sets found on the workshop. Note: Contains clutter items.</li>
+                <li></li>
+            </ul>
+
+            <h3>Changed</h3>
+            <ul>
+                <li>Reordered columns to make comparisons easier.</li>
+                <li>Data source changed from gamepedia.com to fandom.com (former URL reroutes to the fandom.com URL).</li>
+            </ul>
+            <h3>Removed</h3>
+            <ul>
+                <li>"Broken down?" column is removed. All heroes are released.</li>
+                <li></li>
+            </ul>
+
+            <h2>Notes</h2>
+            <ul>
+                <li>Golden number means this hero has a(n) item(s) with duplicates that has gold textures.</li>
+                <li>Add more items after the time of publishing for a realistic count of items - I count by hand and don't web crawl the source site and it is possible that items were added after I was done counting.</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Hero</th>
+                    <th>Current Total Hero Slots</th>
+                    <th>Current Published Sets/Bundles</th>
+                    <th>Total Workshop Sets/Bundles</th>
+                    <th>Difference in Sets/Bundles</th>
+                    <th></th>
+                    <th>Total Love (Total Items)</th>
+                </tr>
+
+                <tr>
+                    <td><img class="heroPortrait" src="#" alt="Hero portrait of XXX" />Tiny</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        Tiny takes a crap ton of time to make sets for. Creatives essentially create 4 heroes (levels of growth) for a single hero. To make it fair, you can take all the numbers here and multiply it by 4
+                        to get a fair'ish result.
+                    </td>
+                </tr>
+            </table>
         </div>
-    </nav>
-
-    <main id="home">
-        <article>
-
-            <p>
-                This page generates game ideas that you can work on your own or with your team. Who knows?
-                Maybe you've found the one! If my calculations are correct, this page can generate approximately <strong><span id="totalIdeas">MULTIPLY ALL ELEMENTS IN ALL OF THE ARRAYS</span></strong> games!
-                This page requires JavaScript enabled on your browser to work properly, if you are having issues, make sure it is enabled.
-            </p>
-        </article>
-        <article id="disclaimer" class="alert">
-            <h2 class="alert">&#128204; Disclaimer and Agreement</h2>
-            <p>
-                The purpose of the page is to generate ideas based on established IPs (Intellectual Property). 
-                <strong>Make your own IP!</strong> Do NOT make a game using an existing IP. ONLY use this page 
-                to draw inspiration for your demo/prototype/project. By using this page, you agree that myself 
-                and this resource are not held responsible for your possible liabilities.
-            </p>
-        </article>
-
-        <article id="gameNoun">
-            <h2>Game titled (The) Noun | (The) Noun Noun | (The) Adjective Noun</h2>
-            <!--Game title: The Keyboard-->
-            <p>
-                A game called <strong>(The) <span class="spn-noun">Key</span>(s)</strong>.<br />
-                A game called <strong>(The) <span class="spn-noun">Door</span> <span>Boot</span>(s)</strong>.<br />
-                A game called <strong>(The) <span class="spn-noun">Mythic</span> <span>Gardener</span>(s)</strong>.<br />
-            </p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-noun">&#127925; Noun</button>
-            <button id="btn-adjective">&#127925; Adjective</button>
-            <button id="btn-all">&#127925; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="gameVerb">
-            <h2>Game titled (The) Verb | (The) Adverb Verb Noun</h2>
-            <!--Game title: The Awakening-->
-
-            <p>
-                A game called <strong>(The) <span class="spn-verb1">Flounder</span>-ing</strong>.<br />
-                A game called <strong>(The) 
-                <span class="spn-adverb1">Quick</span>  
-                <span class="spn-verb2">Jump</span>(-ing)
-                <span class="spn-noun1">Mushroom</span></strong>.<br />
-            </p>
-
-            <span>&#127922; Randomize: </span>
-            <button id="btn-verb">&#127925; Verb</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="gameTime">
-            <h2>Game X set in Timeline Y</h2>
-            <p><strong><span class="spn-game">Grand Theft Auto</span></strong> set in the 
-            <strong><span class="spn-timeline-mod">Alternative</span> 
-                <span class="spn-timeline">1990</span></strong> era/timeline.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-game">&#127918; Game</button>
-            <button id="btn-timeline">&#128340; Timeline (modifier)</button>
-            <button id="btn-timeline">&#128340; Timeline</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="gameTheme">
-            <h2>Revive the Game X, set in Theme Y.</h2>
-            <p>Revive the game, <strong>Dungeon Keeper</strong>. Set in a/an <strong>Sci-fi</strong> theme.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-game">&#127918; Game</button>
-            <button id="btn-game">&#127757; Universe</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="gameNounGenre">
-            <h2>Game as (The) Noun X based on Genre Y.</h2>
-            <!--Game title: Mushroom-->
-            <p>A game about <strong><span class="spn-noun">Waffle</span>(s)</strong> based on the <strong><span class="spn-genre">Role Playing Game - Standard</span></strong> genre.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-noun">&#127925; Noun</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="genreUniv">
-            <h2>Genre X set in Universe Y</h2>
-            <p>A/an <strong><span class="spn-game">GAME</span></strong> set in the <strong><span class="spn-game">GAME</span></strong> universe.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre</button>
-            <button id="btn-game">&#127918; Game</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="gpgf">
-            <h2>Genre W based on punk-like X, and contains elements of Genre Y. Game have/has feature(s) of Genre Z.</h2>
-            <p>
-                <strong><span class="spn-game">GAME</span></strong> based in a/an <strong><span class="spn-punk">PUNK</span>-punk</strong> universe. Contains elements of a/an
-                <strong><span class="spn-genre">GENRE</span></strong> games. Game have/has feature(s) of <strong><span class="spn-genre">GENRE FEATURES</span></strong>.
-            </p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre (Main)</button>
-            <button id="btn-punk">&#128526; Punk</button>
-            <button id="btn-genre">&#127925; Genre (Elements)</button>
-            <button id="btn-all">&#127775; All</button>
-            <button id="btn-keepfeature">&#128204; Keep and add additional features</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="genreTheme">
-            <h2>Genre X set with Theme Y</h2>
-            <p><strong>Simulator (Management)</strong> set with a <strong>Pirate</strong> theme.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre</button>
-            <button id="btn-theme">&#127804; Theme</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="revGameUniv">
-            <h2>Revive the Game X, set in Game Y universe.</h2>
-            <p>Revive the game, <strong>Dungeon Keeper</strong>. Set in <strong>Hollow Knight</strong>'s universe.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-game">&#127918; Game</button>
-            <button id="btn-game">&#127757; Universe</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-
-
-        <article id="revGame">
-            <h2>Reverse the Game X</h2>
-            <p>Reverse the genre of <strong>Dishonored</strong>.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-game">&#127918; Game</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="revGenre">
-            <h2>Reverse the Genre X</h2>
-            <p>Reverse the genre of <strong>Strategy - Tower Defence</strong>.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="genreTime">
-            <h2>Genre X set in Timeline Y</h2>
-            <p><strong>Racing (arcade)</strong> game set in the <strong>alternative 1600s</strong>.</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre</button>
-            <button id="btn-timeline">&#128340; Timeline</button>
-            <button id="btn-timeline">&#128340; Timeline (modifier)</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="magnus">
-            <h2>Magnus Conceptu</h2>
-            <p>
-                A game based on the <strong>Management Simulator</strong> genre with some gameplay elements of <strong>Hollow Knight</strong>. Set in the universe of <strong>Strongbad</strong> with
-                elements of <strong>Stone-punk</strong>, the timeline of <strong>alternative 1960's</strong> and theme is <strong>Ancient Past</strong>. The story is about <a href="#story">this</a>.
-                The title of the game is <strong>THE VERB OF THE ADJECTIVE NOUN</strong>. Minor/lite gameplay elements of <strong>RPG</strong>, <strong>Rogue-lite</strong> and <strong>Survival</strong>. The game's primary
-                civilization is based on <strong>Cyborgs</strong>s - optionally with other competing civilizations of <strong>Mushrooms</strong> based on the <strong>Aztecs</strong>, <strong>Pencils</strong> (<strong>Germanic</strong>) and <strong>Snails</strong> (<strong>Slavic</strong>).
-                (You can determine the relationships between each other). The art style is similar to <strong>Borderlands</strong>.
-            </p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-genre">&#127925; Genre</button>
-            <button id="btn-game1">&#127918; Game (gameplay</button>
-            <button id="btn-game2">&#127918; Game (universe)</button>
-            <button id="btn-timeline">&#128340; Timeline (modifier)</button>
-            <button id="btn-title">Title</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-            <button id="btn-copy">&#128203; Copy this idea!</button>
-        </article>
-
-        <article id="story">
-            <h2>Storytelling</h2>
-            <p>The story begins where the player's plot is (plot). The conflict comes in where (conflict). Finally, the story resolves with (resolution). The ending ends on (cliffhanger).</p>
-            <span>&#127922; Randomize: </span>
-            <button id="btn-story">&#128214; Story</button>
-            <button id="btn-story">&#128215; Plot</button>
-            <button id="btn-story">&#128217; Conflict</button>
-            <button id="btn-story">&#128216; Resolution</button>
-            <button id="btn-story">&#128220; Cliffhanger</button>
-            <button id="btn-all">&#127775; All</button>
-            <br />
-        </article>
-
-        <article id="artStyles">
-            <h2>Using the Art Style of Game X</h2>
-            <p>The chosen game uses the art style of <strong>Borderlands</strong>.</p> <!--Game-->
-            <span>&#127922; Randomize: </span>
-            <button id="btn-game">&#127912; Art Style</button>
-            <br />
-            <input type="radio" name="artlow" value="" />
-            <label for="artlow">Low effort art style</label> <!--Multi-dimensional array where the other array is the effort it takes. [game, effort]-->
-
-            <input type="radio" name="artmod" value="" />
-            <label for="artmod">Moderate effort art style</label> <!--Multi-dimensional array where the other array is the effort it takes. [game, effort]-->
-
-            <input type="radio" name="arthigh" value="" />
-            <label for="arthigh">High effort art style</label> <!--Multi-dimensional array where the other array is the effort it takes. [game, effort]-->
-        </article>
-
-
-
-
-        <article id="request">
-            <h2>Requests</h2>
-
-            <form action="mailto:shortshaunsmith@hotmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
-                Email:<br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname">
-                <textarea name="Comment" rows="10" cols="20" >
-                </textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </article>
-
-        <article>
-            <footer class="center">
-                Shaun Smith | Copyright &copy; 2021+<br />
-                <a href="https://lospec.com/palette-list/royal-monarch-viii">ROYAL MONARCH VIII PALETTE - Created by Vito Blangiardo</a>
-            </footer>
-        </article>
 
 
     </main>
+    <footer>
+        <h2>Conclusions</h2>
+        <p>6 years ago, the game was still shaping up, and boy, did it! Previously</p>
+    </footer>
 
-    
     <script src="js/script.js"></script>
 </body>
 </html>
