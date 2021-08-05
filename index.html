@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="container-fluid">
+<body class="container">
     <header>
         <h1>
             Dota 2 - Cosmetic Love <h2>Change Theme: </h2><button>Beta</button><button>Modern</button> <button>Spreadsheet</button>
@@ -30,16 +30,16 @@
     <main>
 
         <!--<nav>
-            <ul>
-                <li>Introduction</li>
-                <li>Table Design Changes</li>
-                <li>Introduction</li>
-                <li>Introduction</li>
-                <li>Introduction</li>
-                <li>Introduction</li>
-                <li>Introduction</li>
-            </ul>
-        </nav>-->
+        <ul>
+            <li>Introduction</li>
+            <li>Table Design Changes</li>
+            <li>Introduction</li>
+            <li>Introduction</li>
+            <li>Introduction</li>
+            <li>Introduction</li>
+            <li>Introduction</li>
+        </ul>
+    </nav>-->
 
         <header>
             <div>
@@ -58,127 +58,142 @@
 
 
 
-        <div>
+        <article>
             <h2>Table Design Changes</h2>
 
             <h3>Added</h3>
-            <ul>
-                <li>Added new columns.</li>
-            </ul>
+            <div class="darken">
+                <ul>
+                    <li>Added new columns. (See <a href="#Notes">Notes</a> to see what they are and what they represent.)</li>
+                </ul>
+            </div>
+
 
             <h3>Changed</h3>
-            <ul>
-                <li>Reordered columns to make comparisons easier.</li>
-                <li>Data source changed from gamepedia.com to fandom.com (former URL reroutes to the fandom.com URL).</li>
-            </ul>
-            <h3>Removed</h3>
-            <ul>
-                <li>"Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment.</li>
-            </ul>
+            <div class="darken">
+                <ul>
+                    <li>Reordered columns to make comparisons easier.</li>
+                    <li>Data source changed from gamepedia.com to fandom.com (former URL reroutes to the fandom.com URL).</li>
+                </ul>
+            </div>
 
+            <h3>Removed</h3>
+            <div class="darken">
+                <ul>
+                    <li>"Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment.</li>
+                </ul>
+            </div>
+        </article>
+
+
+        <article id="Notes">
             <h2>Notes</h2>
             <ul>
-                <li>Golden number means this hero has a(n) item(s) with duplicates that has gold textures.</li>
-                <li>Add more items after the time of publishing for a realistic count of items - I count by hand and don't web crawl the source site and it is possible that items were added after I was done counting.</li>
-                <li>Sets doesn't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item for all slots, etc.</li>
-                <li>Each hero has their own amount of slots - this can inflate/deflate the ratio. This means it can affect the actual total number of items per hero.</li>
-                <li></li>
-                <li>There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
                 <li>
-                    Column explanations:
+                    <strong>Column Explanations</strong>
                     <ul>
                         <li>Hero - The hero in question.</li>
                         <li>Slots - The total amount of slots for the character. Note: this may have been changed and will be indicated in parenthesis.</li>
                         <li>Has Arcana - The hero has an arcana item or not.</li>
                         <li>Has Persona - The hero has a personal item or not.</li>
-                        <li>Workshop Sets (Present) - The current total sets that is on the workshop. Note: This is an unreliable number as there are sets with items that are: not items (junk) and items that don't fit with the aesthetic of the game.</li>
-                        <li>Published Sets (Past) - The last recorded total of published sets.</li>
-                        <li>Published Sets (Present) - The current recorded total of published sets.</li>
-                        <li>Published Sets (Difference)  - The total difference between old and new published sets.</li>
-                        <li>Total Love (Past) - The last recorded total of published items.</li>
-                        <li>Total Love (Present) - The current recorded total of published items.</li>
-                        <li>Total Love (Difference) - The total difference between old and new published items.</li>
+                        <li>Workshop Sets - The current total sets that is on the workshop. Note: This is an unreliable number as there are sets with items that are: not items (junk) and items that don't fit with the aesthetic of the game.</li>
+                        <li>Published Sets - The past (COLOR), present (COLOR) and difference (COLOR) in recorded total of published sets.</li>
+                        <li>Total Love - The past (COLOR), present (COLOR) and the difference (COLOR) in recorded total of published items.</li>
                         <li>Notes - Notes about the particular hero's items, trends, general information regarding design, etc.</li>
                     </ul>
                 </li>
-
+                <li><strong>Goldies</strong> - Golden number means this hero has a(n) item(s) with duplicates that has gold textures.</li>
+                <li><strong>So many damn items</strong> - Add more items after the time of publishing for a realistic count of items - I count by hand and don't web crawl the source site and it is possible that items were added after I was done counting.</li>
+                <li><strong>Sets are not what they seem</strong> - Sets doesn't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item for all slots, etc.</li>
+                <li><strong>Variable slots</strong> - Each hero has their own amount of slots - this can inflate/deflate the ratio. This means it can affect the actual total number of items per hero.</li>
+                <li><strong>No Workshop Sets</strong> - There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
             </ul>
+        </article>
 
+        <article>
             <h2>Statistics</h2>
-            
-            <table>
+
+            <table class="center">
                 <tr>
                     <th>Hero</th>
                     <th>Slots</th>
                     <th>Has Arcana</th>
                     <th>Has Persona</th>
-                    <th>Workshop Sets (Present)</th>
-                    <th>Published Sets (Past)</th>
-                    <th>Published Sets (Present)</th>
-                    <th>Published Sets (Difference)</th>
-                    <th>Total Love (Past)</th>
+                    <th>Workshop Sets</th>
+                    <th>Published Sets</th>
+                    <th>Total Love</th>
                     <th>Notes</th>
                 </tr>
 
                 <tr>
                     <!--Hero-->
                     <td>
-                        <img class="imghero str agi int" src="images/heroes/HERO.jpg" alt="Hero portrait of XXX" />
+                        <img class="imghero str" src="images/heroes/HERO.jpg" alt="Hero portrait of XXX" />
+                        <span> Tiny</span>
                     </td>
 
                     <!--Slots-->
                     <td>
+                        4
                     </td>
 
                     <!--HasArcana-->
                     <td>
+                        No
                     </td>
 
                     <!--HasPersona-->
                     <td>
+                        No
                     </td>
 
-                    <!--WorkshopSetsPresent-->
+                    <!--WorkshopSets-->
                     <td>
+                        120
                     </td>
 
-                    <!--PublishedSetsPast-->
-                    <td>
-                    </td>
-
-                    <!--PublishedSetsPresent-->
-                    <td>
-                    </td>
-
-                    <!--PublishedSetsPresent-->
-                    <td>
-                    </td>
-
-                    <!--TotalLovePast-->
-                    <td>
+                    <!--PublishedSets-->
+                    <td class="add">
                         <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
-                                Past
+                                48
                             </div>
                             <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
-                                Present
+                                50
                             </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
-                                Difference
+                        </div>
+                    </td>
+
+
+                    <!--TotalLove-->
+                    <td class="douaddble">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                48
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                                50
                             </div>
                         </div>
                     </td>
 
                     <!--Notes-->
                     <td>
-                        Tiny takes a crap ton of time to make sets for. Creatives essentially create 4 heroes (levels of growth) for a single hero. To make it fair, you can take all the numbers here and multiply it by 4
-                        to get a fair'ish result.
+                        Notes
                     </td>
                 </tr>
             </table>
+        </article>
 
-            <a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Link to previous post.</a>
-        </div>
+        <article>
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Link to previous post.</a></li>
+                <li><a href="#">Fandom.com for the Documented Equipment</a></li>
+            </ul>
+        </article>
+
+
     </main>
     <footer>
         <h2>Conclusion</h2>

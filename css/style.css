@@ -61,17 +61,15 @@ nav {
 
 /*The cards*/
 article {
-    background-color: #B0E66A; /*Lime green*/
-    background-color: #d2b939;
-    /*border: 1px solid #B0E66A;*/
-    border-top: 2px white solid;
-    border-bottom: 3px #571442 solid;
-    border-radius: 10px;
+    
+    background-color: #555;
+    border-top: 2px silver solid;
+    border-bottom: 3px black solid;
+    border-radius: 6px;
     padding: 0px;
     padding: 10px;
     margin: 0 auto;
     margin-top: 10px;
-    width: 66%;
 }
 
 /*DISCLAIMER*/
@@ -137,5 +135,31 @@ button {
 .center {
     text-align:center;
     margin: auto;
+    padding: 10px;
+}
+
+.darken{
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.add{
+    width: 110%;
+}
+
+.str{
+    border: solid red 3px;
+}
+
+.agi {
+    border: solid green 3px;
+}
+
+.int {
+    border: solid blue 3px;
+}
+
+td, th, tr {
     padding: 10px;
 }
