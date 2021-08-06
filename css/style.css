@@ -1,12 +1,12 @@
-
-
 * {
     font-family: 'Segoe UI', 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    
+    text-shadow: 0px 0px 3px deepskyblue;
 }
 
 /*Navigation Styling*/
+
+
 nav {
     height: 100%;
     width: 20%;
@@ -14,8 +14,8 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /*black*/
-    background-color: #571442; /*Maroon*/
+    background-color: #111; /*(BLACK)*/
+    background-color: #571442; /*(MAROON)*/
     border-radius: 6px;
     overflow-x: hidden;
     padding: 12px;
@@ -44,6 +44,7 @@ nav {
             transition: 0.2s;
         }
 
+
 /*main {*/
     /*margin-left: 160px; /* Same as the width of the sidenav */
 /*}*/
@@ -60,31 +61,25 @@ nav {
 }
 
 /*The cards*/
-article {
-    
+article, footer {
     background-color: #555;
     border-top: 2px silver solid;
     border-bottom: 3px black solid;
     border-radius: 6px;
+    background-image: url("images/tile.png");
+    background-repeat: repeat;
     padding: 0px;
     padding: 10px;
     margin: 0 auto;
     margin-top: 10px;
 }
 
-/*DISCLAIMER*/
-.alert {
-    background-color: #e02853; /*red*/
-}
+
 
 body {
-    background-color: #63E1F2; /*green*/
-    background-color: #7a433f; /*wine red*/
     background-color: #333;
 }
 
-
-/*HEADERS*/
 h1 {
     color: white;
     font-size: 4em;
@@ -98,18 +93,8 @@ h2 {
     text-shadow: 2px 2px black;
 }
 
-p {
-    background-color: rgba(255,255,255, 0.45);
-    border-radius: 12px;
-    padding: 10px;
-}
-
-
-/*BUTTONS AND STATE*/
-
 button {
     border: none;
-    /*box-shadow: 2px 2px #571442;*/
     box-shadow: 2px 2px #571442, 4px 4px #571442;
     border-radius: 6px;
     background-color: #9d723d;
@@ -121,16 +106,24 @@ button {
     transition: 0.8s;
 }
 
-    /*button.copy {
-        background-color: rgba(255,255,255, 0.5);
-        color: black;
-    }*/
-
     button:hover {
         background-color: #e02853;
         box-shadow: none;
         transition: 0.25s ease-out;
     }
+
+td{
+    background-color: #333;
+}
+
+th{
+    text-align: center;
+}
+
+/*DISCLAIMER*/
+.alert {
+    background-color: #e02853; /*red*/
+}
 
 .center {
     text-align:center;
@@ -148,7 +141,19 @@ button {
     width: 110%;
 }
 
-.str{
+.progress-bar {
+    background-color: black;
+}
+
+.pbar-blue{
+    background-color: dodgerblue;
+}
+
+.pbar-gold {
+    background-color: gold;
+}
+
+.str {
     border: solid red 3px;
 }
 
