@@ -73,7 +73,8 @@
             <h3>Removed</h3>
             <div class="darken">
                 <ul>
-                    <li>"Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment.</li>
+                    <li>"Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment. 
+                    Check the <a href="#sources">past publication</a> for the list broken down status of all the heroes.</li>
                 </ul>
             </div>
         </article>
@@ -86,20 +87,25 @@
                     <strong>Column Explanations</strong>
                     <ul>
                         <li><strong>Hero</strong> - The hero in question.</li>
-                        <li><strong>Slots</strong> - The total amount of slots for the character. Note: this may have been changed and will be indicated in parenthesis.</li>
-                        <li><strong>Has Arcana</strong> - The hero has an arcana item or not.</li>
-                        <li><strong>Has Persona</strong> - The hero has a personal item or not.</li>
+                        <li><strong>Slots</strong> - The total amount of slots for the character.</li>
+                        <li><strong>Arcanas</strong> - The hero has an arcanas or not.</li>
+                        <li><strong>Personas</strong> - The hero has a personas or not.</li>
+                        <li><strong>Taunts</strong> - The hero has taunt animations or not.</li>
+                        <li><strong>Kinetic Gems</strong> - The hero has kinetic gems or not.</li>
                         <li><strong>Workshop Sets</strong> - The current total sets that is on the workshop. Note: This is an unreliable number as there are sets with items that are: not items (junk) and items that don't fit with the aesthetic of the game.</li>
                         <li><strong>Published Sets</strong> - The past (COLOR), present (COLOR) and difference (COLOR) in recorded total of published sets.</li>
                         <li><strong>Total Love</strong> - The past (COLOR), present (COLOR) and the difference (COLOR) in recorded total of published items.</li>
                         <li><strong>Notes</strong> - Notes about the particular hero's items, trends, general information regarding design, etc.</li>
                     </ul>
                 </li>
-                <li><strong>Goldies</strong> - Golden number means this hero has a(n) item(s) with duplicates that has gold textures.</li>
                 <li><strong>So many damn items</strong> - Add more items after the time of publishing for a realistic count of items - I count by hand and don't web crawl the source site and it is possible that items were added after I was done counting.</li>
-                <li><strong>Sets are not what they seem</strong> - Sets doesn't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item for all slots, etc.</li>
+                <li><strong>Variable items per set</strong> - Sets doesn't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item for all slots, etc.</li>
                 <li><strong>Variable slots</strong> - Each hero has their own amount of slots - this can inflate/deflate the ratio. This means it can affect the actual total number of items per hero.</li>
-                <li><strong>No Workshop Sets</strong> - There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
+                <li><strong>No Past Workshop Sets Column</strong> - There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
+                <li><strong>Taunts</strong> - Taunts are not part of the slots column.</li>
+                <li><strong>Weapon Packs</strong> - Weapon packs are considered sets and counted in the Set columns.</li>
+                <li><strong>Arcanas</strong> - Some arcanas are either a set or a single item.</li>
+                <li><strong>Gold</strong> - Some heroes have their total items inflated with golden variants which exist as separate items.</li>
             </ul>
         </article>
 
@@ -110,8 +116,10 @@
                 <tr>
                     <th>Hero</th>
                     <th>Slots</th>
-                    <th>Has Arcana</th>
-                    <th>Has Persona</th>
+                    <th>Arcanas</th>
+                    <th>Personas</th>
+                    <th>Taunts</th>
+                    <th>Kinetic Gems</th>
                     <th>Workshop Sets</th>
                     <th>Published Sets</th>
                     <th>Total Love</th>
@@ -121,9 +129,11 @@
                 <tr>
                     <!--Hero-->
                     <td>
-                        
-                        <p><img class="imghero str" src="images/tiny.png" alt="Hero portrait of Tiny" />
-                        Tiny</p>
+
+                        <p>
+                            <img class="imghero str" src="images/tiny.png" alt="Hero portrait of Tiny" />
+                            Tiny
+                        </p>
                     </td>
 
                     <!--Slots-->
@@ -131,14 +141,24 @@
                         4
                     </td>
 
-                    <!--HasArcana-->
+                    <!--Arcanas-->
                     <td>
-                        No
+                        0
                     </td>
 
-                    <!--HasPersona-->
+                    <!--Personas-->
                     <td>
-                        No
+                        0
+                    </td>
+
+                    <!--Taunts-->
+                    <td>
+                        0
+                    </td>
+                    
+                    <!--KineticGems-->
+                    <td>
+                        0
                     </td>
 
                     <!--WorkshopSets-->
@@ -179,7 +199,7 @@
             </table>
         </article>
 
-        <article>
+        <article id="sources">
             <h2>Sources</h2>
             <ul>
                 <li><a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Link to previous post.</a></li>
