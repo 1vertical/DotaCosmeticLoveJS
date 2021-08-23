@@ -17,8 +17,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!--STYLES-->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
 
 
 </head>
@@ -39,15 +40,16 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Intro</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Changes</a></li>
-
-                        <li><a href="#">Stats</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a class="nava" href="#copyright">Disclaimer</a></li>
+                        <li><a class="nava" href="#introduction">Intro</a></li>
+                        <li><a class="nava" href="#changes">Changes</a></li>
+                        <li><a class="nava" href="#notes">Notes</a></li>
+                        <li><a class="nava" href="#statistics">Stats</a></li>
+                        <li><a class="nava" href="#summary">Summary</a></li>
+                        <li><a class="nava" href="#sources">Sources</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><strong>Last Updated</strong> 20 August 2021</a></li>
+                        <li><a href="#"><strong>Updated:</strong> 20 August 2021</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,34 +58,54 @@
 
     <article id="copyright">
         <h2 class="center">Copyright & Disclaimer</h2>
-        <p class="center">
-            All images are copyrighted by Valve Software.
-            <br /><strong>Disclaimer </strong> ~ The purpose of the website is to demonstrate statistical information regarding Dota 2's "hat economy" over 
-        the period of 7 years. <br />Showing trends, where Valve (and artists) should pick up the slack for unpopular, and other interesting data.</p>
+
+        <h3>Copyright Information</h3>
+        <div class="brighten">
+            <p>
+                <ul>
+                    <li>All assets (images, etc.) are copyrighted and have their rights reserved by Valve Software Inc.</li>
+                </ul>
+
+            </p>
+        </div>
+
+       
+        <h3>Disclaimers</h3>
+        <div class="brighten">
+            <p>
+                <ul>
+                    <li>
+                        The purpose of the website is to demonstrate statistical information regarding Dota 2's "hat economy" over
+                        the period of 7 years. Showing trends, where Valve (and artists) should pick up the slack for unpopular, and other interesting data.
+                    </li>
+                    <li>English is my second language, so if something looks inadequate, you're welcome to correct me.</li>
+                </ul>
+            </p>
+        </div>
+        
 
 
     </article>
-
-    <article id="copyright">
-        <h2 class="center">Support My Work</h2>
-        <p class="center">
-            If you like my work and this information has been useful to you, please consider to support this website's uptime by buying me a Kofy or make a donation on PayPal.
-            <!--links-->
-
-        </p>
-
-
-    </article>
-
-
+        
     <main>
 
-        <article>
-            <div>
-                <h2 class="center">Introduction</h2>
+        <article id="introduction">
+            <h2 class="center">Introduction</h2>
+            <h3>A Short Story</h3>
+            <div class="brighten">
                 <p>
-                    Greetings folks! I'm back. I've made a new <em>"analysis"</em> of Dota 2's wardrobe. What has changed since the last... *checks publish date of last analysis* ...7 years?! What. Anyway, without further
-                    wasting time. Here ya go! :)<br />
+                    Greetings folks! I'm back. I've made a new <em>"analysis"</em> of Dota 2's wardrobe. What has changed since the last... <em>*checks publish date of last analysis*</em> ...7 years?! Wat.
+                </p>
+                <p>
+                    For those that missed my article on analysing which heroes received more cosmetic love than others, this is the new version! Its goal is to 
+                    check who gets more love now than before. Some heroes will be rather depressing to see, they exist so long and are forgotten almost completely.
+                </p>
+                <p>
+                    Make sure to <em>read the notes</em> on what was added, changed and removed from the original analysis. It also contains interesting and required
+                    knowledge to avoid bias.
+                </p>
+                <p>
+                    Anyway, without further wasting time. Here you go!
                 </p>
             </div>
         </article>
@@ -92,7 +114,7 @@
             <h2 class="center">Table Design Changes</h2>
 
             <h3>Added</h3>
-            <div class="darken">
+            <div class="brighten">
                 <ul>
                     <li>Added new columns. (See <a href="#Notes">Notes</a> to see what they are and what they represent.)</li>
                 </ul>
@@ -100,7 +122,7 @@
 
 
             <h3>Changed</h3>
-            <div class="darken">
+            <div class="brighten">
                 <ul>
                     <li>Reordered columns to make comparisons easier.</li>
                     <li>Data source changed from gamepedia.com to fandom.com (former URL reroutes to the fandom.com URL).</li>
@@ -108,12 +130,13 @@
             </div>
 
             <h3>Removed</h3>
-            <div class="darken">
+            <div class="brighten">
                 <ul>
                     <li>
-                        "Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were ready/partially ready/not ready for getting new equipment.
-                        Check the <a href="#sources">past publication</a> for the list broken down status of all the heroes.
+                        "Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were 
+                        ready/partially ready/not ready for getting new equipment.
                     </li>
+                    <li>Check the <a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">past publication</a> for the list broken down status of all the heroes.</li>
                 </ul>
             </div>
         </article>
@@ -121,156 +144,313 @@
         <article id="notes">
             <h2 class="center">Notes</h2>
             <h3>Column Explanations</h3>
-            <ul>
-                <li><strong>Hero</strong> ~ The hero in question.</li>
-                <li><strong>Slots</strong> ~ The total amount of slots for the character.</li>
-                <li><strong>Past Sets</strong> ~ The past total of published sets.</li>
-                <li><strong>Current Sets</strong> ~ The current total of published sets.</li>
-                <li><strong>Set Difference</strong> ~ The difference between past sets and current sets.</li>
-                <li><strong>Past Items</strong> ~ The past total of published items.</li>
-                <li><strong>Current Items</strong> ~ The current total of published items.</li>
-                <li><strong>Item Difference</strong> ~ The difference between past items and current items.</li>
-                <li><strong>Average Factor</strong> ~ As suggested by u/FakeTherapist - The average items per number of slots is included to minimize bias. Formula: Total Items/Slots.</li>
-                <li><strong>Arcanas</strong> ~ The hero has an arcanas or not.</li>
-                <li><strong>Personas</strong> ~ The hero has a personas or not.</li>
-                <li><strong>Taunts</strong> ~ The hero has taunt animations or not.</li>
-                <li><strong>Kinetic Gems</strong> ~ The hero has kinetic gems or not.</li>
-                <li><strong>Voices</strong> ~ The hero has other voices or not.</li>
-                <li><strong>Release Date</strong> ~ The release date of the hero. (In Dota 2's client.) Also, poor IO. :(</li>
-            </ul>
-
-            <h3>Trophy Glyphs</h3>
-            <ul>
-                <li>Indicates their previous position on the previous analysis of being loved. For example: 1st = Most loved. 99th is the least. X is when the hero didn't exist.</li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li><strong>Hero</strong> ~ The hero in question.</li>
+                    <li><strong>Slots</strong> ~ The total amount of slots for the character.</li>
+                    <li><strong>Past Sets</strong> ~ The past total of published sets.</li>
+                    <li><strong>Cur. Sets</strong> ~ The current total of published sets.</li>
+                    <li><strong>Diff. Sets</strong> ~ The difference between past sets and current sets.</li>
+                    <li><strong>Past Items</strong> ~ The past total of published items.</li>
+                    <li><strong>Cur. Items</strong> ~ The current total of published items.</li>
+                    <li><strong>Diff. Items</strong> ~ The difference between past total items and current total items.</li>
+                    <li><strong>Avg. Items/Slots</strong> ~ As suggested by u/FakeTherapist - The average items per number of slots is included to minimize bias. Formula: Total Items/Slots.</li>
+                    <li><strong>Arcanas</strong> ~ The hero has arcanas or not.</li>
+                    <li><strong>Personas</strong> ~ The hero has personas or not.</li>
+                    <li><strong>Taunts</strong> ~ The hero has taunt animations or not.</li>
+                    <li><strong>Kin. Gems</strong> ~ The hero has kinetic gems or not.</li>
+                    <li><strong>Voices</strong> ~ The hero has voices or not.</li>
+                    <li><strong>Released</strong> ~ The release date of the hero. (In Dota 2's client.)</li>
+                </ul>
+            </div>
 
             <h3>Totals are Variable</h3>
-            <ul>
-                <li>The totals here is an approximation - I count by hand and don't web crawl the source site and it is very possible that items were added after I was done counting.</li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li>The totals here is an approximation - I count by hand and don't web crawl the source site and it is very possible that items were added after I was done counting.</li>
+                </ul>
+            </div>
 
             <h3>Variable Items per Set</h3>
-            <ul>
-                <li>Sets don't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item 
-                for all slots, etc.</li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li>
+                        Sets don't necessarily include items made for all slots. Examples: Single items, Arcanas, early lifetime sets - typically a set with 3 items instead of an item
+                        for all slots, etc.
+                    </li>
+                </ul>
+            </div>
 
             <h3>Slots vs. Total Inflation</h3>
-            <ul>
-                <li>Each hero has their own amount of slots ~ this can inflate/deflate the ratio leading towards a biased total of items. The Average Factor column is added for an inflation factor for sets.</li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li>Each hero has their own amount of slots ~ this can inflate/deflate the ratio leading towards a biased total of items. The Average Factor column is added for an inflation factor for sets.</li>
+                </ul>
+            </div>
 
-            <ul>
-                <li>
-                    <strong>Variable Slots</strong>
-                    <ul>
-                        
-                        <li>
-                            Some heroes' (like tinker for example) slots differ from the website source total and workshop requirements.
-                            The maximum number is used.
-                        </li>
-                    </ul>
-                </li>
-                <li><strong>Slots Column Updated</strong> ~ The slots column was updated to the current slot counts. You will notice that some heroes' slots are also updated from the old count.</li>
-                <li><strong>No Past Workshop Sets Column</strong> ~ There is no "Workshop Sets (Past)" column because I didn't record it back in the day.</li>
-                <li><strong>Weapon Packs</strong> ~ Weapon packs are considered sets here and added in the Set column for heroes that have them.</li>
-                <li><strong>Arcanas</strong> 
-                    <ul>
-                        <li>Some arcanas are either a set of items or a single item.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Duplicate Items</strong>
-                </li>
+            <h3>Inconsistent Slot Totals</h3>
+            <div class="brighten">
+                <ul>
+                    <li>Some heroes' (like tinker for example) slots differ from the website source total and workshop requirements. The maximum number is used.</li>
+                </ul>
+            </div>
 
-            </ul>
+            <h3>Updated Slots Column</h3>
+            <div class="brighten">
+                <ul>
+                    <li>
+                        The Slots column was updated to the current slot counts. You will notice that some numbers are different compared to the older analysis. This can be for one or a few reasons:
+                        <ul>
+                            <li>I've perhaps made a typo or combined taunts with items in the past for some heroes.</li>
+                            <li>The heroes were broken down further.</li>
+                            <li>the heroes that was not broken down (but received items) was given slots.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h3>Weapon Packs</h3>
+            <div class="brighten">
+                <ul>
+                    <li>Some heroes have weapon packs.</li>
+                    <li>Weapon packs are considered as Sets and is added in the Set column for heroes that have them.</li>
+                </ul>
+            </div>
+
+
+            <h3>Arcanas</h3>
+            <div class="brighten">
+                <ul>
+                    <li>Some arcanas are either a set of items or a single item.</li>
+                </ul>
+            </div>
+
+
             <h3>Duplicate and Gold Items</h3>
-            <ul>
-                <li>Some heroes have duplicates of the same item (like a gold version of an item for example).</li>
-                <li>These items are part of the total count.</li>
-                <li>Not all heroes have duplicates though which is also a factor of inflation.</li>
-                <li>Gold items are considered separate items from their standard counterparts.</li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li>Some heroes have duplicates of the same item (like a gold version of an item for example).</li>
+                    <li>Not all heroes have duplicates though which also serves as a factor of inflation.</li>
+                    <li>Gold Items are considered separate items from their standard counterparts.</li>
+                    <li>Gold Items are part of the total count.</li>
+                </ul>
+            </div>
+
+
 
         </article>
 
-        <article id="cosmo-stats">
+        <article id="statistics">
             <h2 class="center">Statistics</h2>
-            <p><Strong>Mobile Friendliness Note</Strong> ~ Although i've made an attempt to make this chart mobile friendly as possible (within my capability anyway) your experience will be much better on a PC.</p>
 
-            <section>
-                <div class="container text-xs-center">
+            <h3>Mobile Responsiveness</h3>
+            <div class="brighten">
+                <p>Although i've made an attempt to make this chart mobile friendly as possible (within my capability anyway) your experience will be much better on a PC.</p>
+            </div>
+            
+            <div style="overflow-x:auto;">
+                <table class="center">
+                    <tr>
+                        <th>Hero</th>
+                        <th>Slots</th>
+                        <th>Past Sets</th>
+                        <th>Cur. Sets</th>
+                        <th>Diff. Sets</th>
+                        <th>Past Items</th>
+                        <th>Cur. Items</th>
+                        <th>Diff. Items</th>
+                        <th>Avg. Items/Slots</th>
+                        <th>Taunts</th>
+                        <th>Kin. Gems</th>
+                        <th>Arcanas</th>
+                        <th>Personas</th>
+                        <th>Voices</th>
+                        <th>Released</th>
+                    </tr>
 
-                    <div class="row">
+                    <tr>
+                        <!--Hero-->
+                        <td><p><img class="imghero int" src="images/tinker.png" alt="A hero portrait of Tinker." />Tinker</p></td>
 
-                        <div class="col fadeIn" data-wow-delay="0.10s">HERO</div>
-                        <div class="col fadeIn" data-wow-delay="0.15s">SLOTS</div>
-                        <div class="col fadeIn" data-wow-delay="0.10s">PASTSETS</div>
-                        <div class="col fadeIn" data-wow-delay="0.15s">PRESENTSETS</div>
-                        <div class="col fadeIn" data-wow-delay="0.10s">SETDIF</div>
-                        <div class="col fadeIn" data-wow-delay="0.15s">PASTITEMS</div>
-                        <div class="col fadeIn" data-wow-delay="0.10s">PRESENTITEMS</div>
-                        <div class="col fadeIn" data-wow-delay="0.15s">ITEMDIF</div>
-                        <div class="col fadeIn" data-wow-delay="0.10s">AVGFACTOR</div>
-                        <div class="col fadeIn" data-wow-delay="0.15s">SLOTS</div>
+                        <!--Slots-->
+                        <td>6</td>
 
-                    </div>
+                        <!--PastSets-->
+                        <td>0</td>
 
-                    
-                </div>
-            </section>
+                        <!--CurrentSets-->
+                        <td>3</td>
+
+                        <!--SetsDifference-->
+                        <td>3</td>
+
+                        <!--PastItems-->
+                        <td>0</td>
+
+                        <!--CurrentItems-->
+                        <td>18</td>
+
+                        <!--ItemsDifference-->
+                        <td>18</td>
+
+                        <!--AverageFactor-->
+                        <td>1</td>
+
+                        <!--Taunts-->
+                        <td>1</td>
+
+                        <!--Arcanas-->
+                        <td>0</td>
+
+                        <!--Personas-->
+                        <td>0</td>
+
+                        <!--KineticGems-->
+                        <td>0</td>
+
+                        <!--Voices-->
+                        <td>0</td>
+
+                        <!--ReleaseDate-->
+                        <td>2011/06/02</td>
+                    </tr>
+
+
+                </table>
+            </div>
+
 
         </article>
 
         <article id="summary">
             <h2 class="center">Summary</h2>
-            <ul>
-                <li><strong>Total Item Count</strong> - A total (approximation) of XXX items were added since the last analysis.</li>
-                <li><strong>Missing Taunts</strong> - XXX heroes do not have taunts.</li>
-                <li><strong>Missing Kinetic Gems</strong> - XXX heroes do not have kinetic gems.</li>
-                <li><strong>Missing Personas</strong> - XXX heroes do not have personas.</li>
-                <li><strong>Missing Arcanas</strong> - XXX heroes do not have taunts.</li>
-                <li>
-                    <strong>Dedicated Employee</strong> - XXX is the hero that existed the longest amount time with no arcana, no persona, no taunts, no kinetic gems and the least amount
-                    of items.
-                </li>
-                <li><strong>Nepotism is real</strong> - XXX is the hero that existed the least amount of time with an arcana or persona released on Day 1 and other items.</li>
-                <li><strong>Average item set differences for strength heroes are XXX.</strong></li>
-                <li><strong>Average item set differences for agility heroes are XXX.</strong></li>
-                <li><strong>Average item set differences for intelligence heroes are XXX.</strong></li>
-                <li><strong></strong></li>
-            </ul>
-        </article>
 
-        <article id="conclusion">
-            <h2 class="center">Conclusion</h2>
-            <p>
-                Around 6 years ago, the game was still shaping up, and boy, did it! Previously, the art style was defined and creatives needed to adhere the design documents. It is interesting to see how the overall art style has
-                changed over the years.
+            <h3>Total Items</h3>
+            <div class="brighten">
+                <p>A total (approximation) of XXX items were added since the last analysis.</p>
+            </div>
 
-                Thanks for viewing, another update after 6 years! Maybe!
-            </p>
+            <h3>Total Heroes with No Taunts</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Oldest Hero with No Taunts</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Youngest Hero with a Taunt</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Total Heroes with No Arcanas</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Oldest Hero with No Arcanas</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Youngest Hero with a Arcana</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Total Heroes with No Personas</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Oldest Hero with No Personas</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Youngest Hero with a Persona</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Total Heroes with No Kinetic Gems</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Oldest Hero with No Kinetic Gems</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Youngest Hero with a Kinetic Gem</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Total Heroes with No Voices</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Oldest Hero with No Voices</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Youngest Hero with a Voice</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Dedicated Employees</h3>
+            <div class="brighten">
+                <p>The top 5 oldest heroes with no taunts, arcanas, personas, kinetic gems, voices and has the least items are:</p>
+                <ul>
+                    <li>XXXX - YYYY</li>
+                    <li>XXXX - YYYY</li>
+                    <li>XXXX - YYYY</li>
+                    <li>XXXX - YYYY</li>
+                    <li>XXXX - YYYY</li>
+                </ul>
+            </div>
+            
+
+            <h3>Average Total Items for Strength Heroes</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Average Total Items for Agility Heroes</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Average Total Items for Intelligence Heroes</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Thank you!</h3>
+            <div class="brighten">
+                <p>That's a wrap folks, thanks for checking out this analysis.</p>
+            </div>
         </article>
 
         <article id="sources">
             <h2 class="center">Sources</h2>
-            <ul>
-                <li><a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Link to previous post.</a></li>
-                <li><a href="https://dota2.fandom.com/wiki/">Fandom.com for the Documented Equipment</a></li>
-            </ul>
+            <div class="brighten">
+                <ul>
+                    <li><a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">Previous Dota 2 Cosmetic Love analysis (2014).</a></li>
+                    <li><a href="https://dota2.fandom.com/wiki/">Fandom.com for the Documented Equipment</a></li>
+                </ul>
+            </div>
         </article>
-
-        <article id="feedback">
-            <h2 class="center">Send me feedback</h2>
-            <p>If you want other data displayed here, please send it for consideration by completing the form below:</p>
-            <p>FORM</p>
-        </article>
-
 
     </main>
-    <footer>
-        
-    </footer>
 
     <script src="js/script.js"></script>
 </body>
