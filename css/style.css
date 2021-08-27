@@ -27,7 +27,7 @@
 
 a{
     color:deepskyblue;
-    transition: 2s linear;
+    transition: 0.5s linear;
 }
 
 a:hover{
@@ -44,13 +44,33 @@ article, footer {
     margin: 0 auto;
     margin-top: 10px;
     box-shadow: black 0px 0px 12px;
-    transition: 2s linear;
+    transition: 0.5s linear;
 }
 
 article:hover {
     background-color: #111;
     border: 1px #444 solid;
     transition: 0.5s linear;
+}
+
+button#topButton {
+    background-color: #444;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: black;
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    left: 85%;
+    max-width: 60px;
+    max-height: 60px;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: black 0px 0px 12px;
 }
 
 strong {
@@ -113,9 +133,10 @@ th{
     color: white;
 }
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
     background-color: rgba(47,67,108,1);
-}
+}*/
+
 
 /*DISCLAIMER*/
 .alert {
@@ -128,11 +149,19 @@ tr:nth-child(even) {
     padding: 10px;
 }
 
-.brighten{
+.brighten {
     background-color: rgba(255,255,255,0.1);
+    border: black solid 1px;
     border-radius: 6px;
     padding: 10px;
+    margin-bottom: 10px;
 }
+
+.brighten:hover {
+    background-color: rgba(255,255,255,0.1);
+    border: rgba(255,255,255,0.3) solid 1px;
+}
+
 
 .add{
     width: 110%;
@@ -149,7 +178,7 @@ tr:nth-child(even) {
 }
 
 .imghero{
-    width: 125%;
+    width: 75%;
 }
 
 .nava:hover{
@@ -158,18 +187,108 @@ tr:nth-child(even) {
 }
 
 .str {
-    border: solid red 3px;
+    border: solid red 1px;
+    box-shadow: orangered 0px 0px 8px;
 }
 
 .agi {
-    border: solid green 3px;
+    border: solid limegreen 1px;
+    box-shadow: lawngreen 0px 0px 8px;
 }
 
 .int {
     border: solid deepskyblue 1px;
-    box-shadow: deepskyblue 0px 0px 8px;
+    box-shadow: deepskyblue 0px 0px 8px ;
 }
 
 td, th, tr {
     padding: 10px;
 }
+
+td {
+    transition: 0.1s linear;
+}
+
+th{
+    position:sticky;
+    top:0;
+}
+
+td:hover {
+    box-shadow: deepskyblue 0px 0px 4px inset;
+    background-color: rgba(47,67,108,0.5);
+    border-radius: 8px;
+    transition: 0.25s linear;
+    color: white;
+    text-shadow: deepskyblue 0px 0px 4px;
+}
+
+/*SLOTS*/
+    td:nth-child(2) {
+        background: #2d2d2d;
+    }
+
+    /*past sets*/
+    td:nth-child(3) {
+        background: #2d2520;
+    }
+
+    /*current sets*/
+    td:nth-child(4) {
+        background: #2d2820;
+    }
+
+    /*differnce sets*/
+    td:nth-child(5) {
+        background: #2d2d1e;
+    }
+
+/*past items*/
+    td:nth-child(6) {
+        background: #20252d;
+    }
+
+    /*current items*/
+    td:nth-child(7) {
+        background: #20292d;
+    }
+
+    /*diff items*/
+    td:nth-child(8) {
+        background: #202d2d;
+    }
+
+    /*avg items*/
+    td:nth-child(9) {
+        background: #2d2d2d;
+    }
+
+    /*taunts*/
+    td:nth-child(10) {
+        background: #28202a;
+    }
+
+    /*gems*/
+    td:nth-child(11) {
+        background: #2a2520;
+    }
+
+    /*Arcana*/
+    td:nth-child(12) {
+        background: #272a20;
+    }
+
+    /*Personas*/
+    td:nth-child(13) {
+        background: #2d2620;
+    }
+
+    /*Voices*/
+    td:nth-child(14) {
+        background: #2d2d20;
+    }
+
+    /*Release*/
+    td:nth-child(15) {
+        background: #2d2d2d;
+    }

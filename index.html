@@ -19,13 +19,14 @@
     <!--STYLES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    
+
 
 
 </head>
 
 <body class="container">
 
+    <button id="topButton"><a href="#top">Top</a></button>
 
     <header>
         <nav class="navbar navbar-inverse">
@@ -69,24 +70,24 @@
             </p>
         </div>
 
-       
+
         <h3>Disclaimers</h3>
         <div class="brighten">
             <p>
                 <ul>
                     <li>
                         The purpose of the website is to demonstrate statistical information regarding Dota 2's "hat economy" over
-                        the period of 7 years. Showing trends, where Valve (and artists) should pick up the slack for unpopular, and other interesting data.
+                        the period of 7 years. Showing trends, where Valve (and artists) should pick up the slack for unpopular heroes, and other interesting data regarding the virtual economy.
                     </li>
                     <li>English is my second language, so if something looks inadequate, you're welcome to correct me.</li>
                 </ul>
             </p>
         </div>
-        
+
 
 
     </article>
-        
+
     <main>
 
         <article id="introduction">
@@ -97,7 +98,7 @@
                     Greetings folks! I'm back. I've made a new <em>"analysis"</em> of Dota 2's wardrobe. What has changed since the last... <em>*checks publish date of last analysis*</em> ...7 years?! Wat.
                 </p>
                 <p>
-                    For those that missed my article on analysing which heroes received more cosmetic love than others, this is the new version! Its goal is to 
+                    For those that missed my article on analysing which heroes received more cosmetic love than others, this is the new version! Its goal is to
                     check who gets more love now than before. Some heroes will be rather depressing to see, they exist so long and are forgotten almost completely.
                 </p>
                 <p>
@@ -133,7 +134,7 @@
             <div class="brighten">
                 <ul>
                     <li>
-                        "Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were 
+                        "Broken down?" column is removed. All heroes are currently released. For the uninitiated, this column tracked which heroes were
                         ready/partially ready/not ready for getting new equipment.
                     </li>
                     <li>Check the <a href="https://www.reddit.com/r/DotA2/comments/2bpz0j/cosmetic_love/">past publication</a> for the list broken down status of all the heroes.</li>
@@ -146,21 +147,21 @@
             <h3>Column Explanations</h3>
             <div class="brighten">
                 <ul>
-                    <li><strong>Hero</strong> ~ The hero in question.</li>
-                    <li><strong>Slots</strong> ~ The total amount of slots for the character.</li>
-                    <li><strong>Past Sets</strong> ~ The past total of published sets.</li>
-                    <li><strong>Cur. Sets</strong> ~ The current total of published sets.</li>
-                    <li><strong>Diff. Sets</strong> ~ The difference between past sets and current sets.</li>
-                    <li><strong>Past Items</strong> ~ The past total of published items.</li>
-                    <li><strong>Cur. Items</strong> ~ The current total of published items.</li>
-                    <li><strong>Diff. Items</strong> ~ The difference between past total items and current total items.</li>
-                    <li><strong>Avg. Items/Slots</strong> ~ As suggested by u/FakeTherapist - The average items per number of slots is included to minimize bias. Formula: Total Items/Slots.</li>
-                    <li><strong>Arcanas</strong> ~ The hero has arcanas or not.</li>
-                    <li><strong>Personas</strong> ~ The hero has personas or not.</li>
-                    <li><strong>Taunts</strong> ~ The hero has taunt animations or not.</li>
-                    <li><strong>Kin. Gems</strong> ~ The hero has kinetic gems or not.</li>
-                    <li><strong>Voices</strong> ~ The hero has voices or not.</li>
-                    <li><strong>Released</strong> ~ The release date of the hero. (In Dota 2's client.)</li>
+                    <li><strong>Hero</strong> - The hero in question.</li>
+                    <li><strong>Slots</strong> - The total amount of slots for the character.</li>
+                    <li><strong>Past Sets</strong> - The past total of published sets.</li>
+                    <li><strong>Cur. Sets</strong> - The current total of published sets.</li>
+                    <li><strong>Diff. Sets</strong> - The difference between past sets and current sets.</li>
+                    <li><strong>Past Items</strong> - The past total of published items.</li>
+                    <li><strong>Cur. Items</strong> - The current total of published items.</li>
+                    <li><strong>Diff. Items</strong> - The difference between past total items and current total items.</li>
+                    <li><strong>Avg. Items/Slots</strong> - As suggested by u/FakeTherapist - The approximate average items per number of slots is included to minimize bias and display inflation ratio. Formula: Total Items/Slots. Rounded upwards.</li>
+                    <li><strong>Arcanas</strong> - The hero has arcanas or not.</li>
+                    <li><strong>Personas</strong> - The hero has personas or not.</li>
+                    <li><strong>Taunts</strong> - The hero has taunt animations or not.</li>
+                    <li><strong>Kin. Gems</strong> - The hero has kinetic gems or not.</li>
+                    <li><strong>Voices</strong> - The hero has voices or not.</li>
+                    <li><strong>Released</strong> - The release date of the hero. (In the Dota 2 client.)</li>
                 </ul>
             </div>
 
@@ -248,79 +249,151 @@
             <div class="brighten">
                 <p>Although i've made an attempt to make this chart mobile friendly as possible (within my capability anyway) your experience will be much better on a PC.</p>
             </div>
-            
+
             <div style="overflow-x:auto;">
-                <table class="center">
+                <table unselectable="on" class="center filterTable">
                     <tr>
                         <th>Hero</th>
-                        <th>Slots</th>
-                        <th>Past Sets</th>
-                        <th>Cur. Sets</th>
-                        <th>Diff. Sets</th>
-                        <th>Past Items</th>
-                        <th>Cur. Items</th>
-                        <th>Diff. Items</th>
-                        <th>Avg. Items/Slots</th>
-                        <th>Taunts</th>
-                        <th>Kin. Gems</th>
-                        <th>Arcanas</th>
-                        <th>Personas</th>
-                        <th>Voices</th>
-                        <th>Released</th>
+                        <th onclick="sortTable(1)">Slots</th>
+                        <th onclick="sortTable(2)">Past Sets</th>
+                        <th onclick="sortTable(3)">Cur. Sets</th>
+                        <th onclick="sortTable(4)">Diff. Sets</th>
+                        <th onclick="sortTable(5)">Past Items</th>
+                        <th onclick="sortTable(6)">Cur. Items</th>
+                        <th onclick="sortTable(7)">Diff. Items</th>
+                        <th onclick="sortTable(8)">Avg. Items/Slots</th>
+                        <th onclick="sortTable(9)">Taunts</th>
+                        <th onclick="sortTable(10)">Kin. Gems</th>
+                        <th onclick="sortTable(11)">Arcanas</th>
+                        <th onclick="sortTable(12)">Personas</th>
+                        <th onclick="sortTable(13)">Voices</th>
+                        <th onclick="sortTable(14)">Released</th>
                     </tr>
 
-                    <tr>
-                        <!--Hero-->
-                        <td><p><img class="imghero int" src="images/tinker.png" alt="A hero portrait of Tinker." />Tinker</p></td>
-
-                        <!--Slots-->
-                        <td>6</td>
-
-                        <!--PastSets-->
-                        <td>0</td>
-
-                        <!--CurrentSets-->
-                        <td>3</td>
-
-                        <!--SetsDifference-->
-                        <td>3</td>
-
-                        <!--PastItems-->
-                        <td>0</td>
-
-                        <!--CurrentItems-->
-                        <td>18</td>
-
-                        <!--ItemsDifference-->
-                        <td>18</td>
-
-                        <!--AverageFactor-->
-                        <td>1</td>
-
-                        <!--Taunts-->
-                        <td>1</td>
-
-                        <!--Arcanas-->
-                        <td>0</td>
-
-                        <!--Personas-->
-                        <td>0</td>
-
-                        <!--KineticGems-->
-                        <td>0</td>
-
-                        <!--Voices-->
-                        <td>0</td>
-
-                        <!--ReleaseDate-->
-                        <td>2011/06/02</td>
-                    </tr>
-
+                    <tr><td><p><img class="imghero str" src="images/aba.png" alt="A hero portrait of Abaddon." />Abaddon</p></td><td>5</td><td>4</td><td>13</td><td>9</td><td>30</td><td>78</td><td>48</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-07-12</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/alch.png" alt="A hero portrait of Alchemist." />Alchemist</p></td><td>7</td><td>5</td><td>12</td><td>7</td><td>38</td><td>90</td><td>52</td><td>13</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-11-18</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/aa.png" alt="A hero portrait of Ancient Apparition." />Ancient Apparition</p></td><td>4</td><td>0</td><td>3</td><td>3</td><td>0</td><td>15</td><td>15</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-06-17</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/am.png" alt="A hero portrait of Anti-Mage." />Anti-Mage</p></td><td>8</td><td>9</td><td>19</td><td>10</td><td>65</td><td>119</td><td>54</td><td>15</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/arc.png" alt="A hero portrait of Arc Warden." />Arc Warden</p></td><td>4</td><td>0</td><td>4</td><td>4</td><td>0</td><td>17</td><td>17</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2015-12-16</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/axe.png" alt="A hero portrait of Axe." />Axe</p></td><td>5</td><td>11</td><td>20</td><td>9</td><td>69</td><td>116</td><td>47</td><td>23</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/bane.png" alt="A hero portrait of Bane." />Bane</p></td><td>4</td><td>0</td><td>3</td><td>3</td><td>0</td><td>14</td><td>14</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-03-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/bat.png" alt="A hero portrait of Batrider." />Batrider</p></td><td>4</td><td>2</td><td>12</td><td>10</td><td>13</td><td>56</td><td>43</td><td>14</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-27</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/beast.png" alt="A hero portrait of Beastmaster." />Beastmaster</p></td><td>7</td><td>4</td><td>11</td><td>7</td><td>20</td><td>66</td><td>46</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-05-20</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/bs.png" alt="A hero portrait of Bloodseeker." />Bloodseeker</p></td><td>7</td><td>6</td><td>21</td><td>15</td><td>54</td><td>106</td><td>52</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-06</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/bh.png" alt="A hero portrait of Bounty Hunter." />Bounty Hunter</p></td><td>7</td><td>11</td><td>17</td><td>6</td><td>76</td><td>110</td><td>34</td><td>16</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-12-21</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/brew.png" alt="A hero portrait of Brewmaster." />Brewmaster</p></td><td>6</td><td>1</td><td>8</td><td>7</td><td>13</td><td>50</td><td>37</td><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-04-19</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/bb.png" alt="A hero portrait of Bristleback." />Bristleback</p></td><td>5</td><td>3</td><td>8</td><td>5</td><td>17</td><td>46</td><td>29</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-03-28</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/brood.png" alt="A hero portrait of Broodmother." />Broodmother</p></td><td>5</td><td>4</td><td>15</td><td>11</td><td>15</td><td>91</td><td>76</td><td>18</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-20</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/cw.png" alt="A hero portrait of Centaur Warrunner." />Centaur Warrunner</p></td><td>7</td><td>5</td><td>14</td><td>9</td><td>42</td><td>110</td><td>68</td><td>16</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-10-25</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/ck.png" alt="A hero portrait of Chaos Knight." />Chaos Knight</p></td><td>5</td><td>7</td><td>14</td><td>7</td><td>45</td><td>84</td><td>39</td><td>17</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-06-11</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/chen.png" alt="A hero portrait of Chen." />Chen</p></td><td>6</td><td>4</td><td>8</td><td>4</td><td>27</td><td>45</td><td>18</td><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-07-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/clinkz.png" alt="A hero portrait of Clinkz." />Clinkz</p></td><td>6</td><td>3</td><td>10</td><td>7</td><td>20</td><td>53</td><td>33</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-01-26</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/clock.png" alt="A hero portrait of Clockwerk." />Clockwerk</p></td><td>5</td><td>3</td><td>16</td><td>13</td><td>16</td><td>80</td><td>64</td><td>16</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2011-04-20</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/cm.png" alt="A hero portrait of Crystal Maiden." />Crystal Maiden</p></td><td>5</td><td>7</td><td>17</td><td>10</td><td>47</td><td>100</td><td>53</td><td>20</td><td>2</td><td>1</td><td>0</td><td>2</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/ds.png" alt="A hero portrait of Dark Seer." />Dark Seer</p></td><td>5</td><td>3</td><td>9</td><td>6</td><td>16</td><td>48</td><td>32</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-04-30</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/dw.png" alt="A hero portrait of Dark Willow." />Dark Willow</p></td><td>5</td><td>0</td><td>7</td><td>7</td><td>0</td><td>38</td><td>38</td><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2017-10-31</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/dawn.png" alt="A hero portrait of Dawnbreaker." />Dawnbreaker</p></td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2021-04-09</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/dazzle.png" alt="A hero portrait of Dazzle." />Dazzle</p></td><td>5</td><td>4</td><td>9</td><td>5</td><td>20</td><td>52</td><td>32</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/dp.png" alt="A hero portrait of Death Prophet." />Death Prophet</p></td><td>6</td><td>7</td><td>20</td><td>13</td><td>40</td><td>111</td><td>71</td><td>19</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2011-12-09</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/disruptor.png" alt="A hero portrait of Disruptor." />Disruptor</p></td><td>6</td><td>5</td><td>12</td><td>7</td><td>30</td><td>86</td><td>56</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-07-05</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/doom.png" alt="A hero portrait of Doom." />Doom</p></td><td>7</td><td>6</td><td>16</td><td>10</td><td>53</td><td>122</td><td>69</td><td>17</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>2011-06-24</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/dk.png" alt="A hero portrait of Dragon Knight." />Dragon Knight</p></td><td>7</td><td>8</td><td>18</td><td>10</td><td>55</td><td>124</td><td>69</td><td>18</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2011-11-03</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/drow.png" alt="A hero portrait of Drow Ranger." />Drow Ranger</p></td><td>7</td><td>9</td><td>21</td><td>12</td><td>76</td><td>164</td><td>88</td><td>23</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/earth.png" alt="A hero portrait of Earth Spirit." />Earth Spirit</p></td><td>6</td><td>2</td><td>5</td><td>3</td><td>14</td><td>29</td><td>15</td><td>5</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-11-14</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/es.png" alt="A hero portrait of Earthshaker." />Earthshaker</p></td><td>4</td><td>5</td><td>10</td><td>5</td><td>27</td><td>56</td><td>29</td><td>14</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/et.png" alt="A hero portrait of Elder Titan." />Elder Titan</p></td><td>5</td><td>2</td><td>5</td><td>3</td><td>13</td><td>29</td><td>16</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-11-14</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/es.png" alt="A hero portrait of Ember Spirit." />Ember Spirit</p></td><td>6</td><td>2</td><td>12</td><td>10</td><td>17</td><td>70</td><td>53</td><td>12</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2013-11-14</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/bambi.png" alt="A hero portrait of Enchantress." />Enchantress</p></td><td>5</td><td>4</td><td>11</td><td>7</td><td>24</td><td>61</td><td>37</td><td>12</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-05-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/enigma.png" alt="A hero portrait of Enigma." />Enigma</p></td><td>4</td><td>0</td><td>7</td><td>7</td><td>1</td><td>30</td><td>29</td><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-02-12</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/faceless.png" alt="A hero portrait of Faceless Void." />Faceless Void</p></td><td>5</td><td>6</td><td>11</td><td>5</td><td>36</td><td>64</td><td>28</td><td>13</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2011-02-19</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/gs.png" alt="A hero portrait of Grimstroke." />Grimstroke</p></td><td>4</td><td>0</td><td>3</td><td>3</td><td>0</td><td>14</td><td>14</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2018-08-24</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/gyro.png" alt="A hero portrait of Gyrocopter." />Gyrocopter</p></td><td>5</td><td>2</td><td>12</td><td>10</td><td>9</td><td>65</td><td>56</td><td>13</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-06-11</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/hood.png" alt="A hero portrait of Hoodwink." />Hoodwink</p></td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2020-12-17</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/husk.png" alt="A hero portrait of Huskar." />Huskar</p></td><td>5</td><td>2</td><td>8</td><td>6</td><td>11</td><td>43</td><td>32</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-27</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/carl.png" alt="A hero portrait of Invoker." />Invoker</p></td><td>6</td><td>10</td><td>19</td><td>9</td><td>51</td><td>104</td><td>53</td><td>17</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>2012-01-19</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/io.png" alt="A hero portrait of Io." />Io</p></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2012-06-28</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/jakiro.png" alt="A hero portrait of Jakiro." />Jakiro</p></td><td>4</td><td>0</td><td>3</td><td>3</td><td>0</td><td>15</td><td>15</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-27</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/juggs.png" alt="A hero portrait of Juggernaut." />Juggernaut</p></td><td>6</td><td>11</td><td>20</td><td>9</td><td>71</td><td>127</td><td>56</td><td>21</td><td>2</td><td>1</td><td>0</td><td>4</td><td>1</td><td>2011-09-30</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/kotl.png" alt="A hero portrait of Keeper of the Light." />Keeper of the Light</p></td><td>4</td><td>4</td><td>10</td><td>6</td><td>26</td><td>48</td><td>22</td><td>12</td><td>1</td><td>0</td><td>0</td><td>3</td><td>0</td><td>2012-07-26</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/kunkka.png" alt="A hero portrait of Kunkka." />Kunkka</p></td><td>8</td><td>8</td><td>14</td><td>6</td><td>79</td><td>130</td><td>51</td><td>16</td><td>1</td><td>0</td><td>0</td><td>4</td><td>0</td><td>2011-10-06</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/lc.png" alt="A hero portrait of Legion Commander." />Legion Commander</p></td><td>6</td><td>4</td><td>17</td><td>13</td><td>21</td><td>100</td><td>79</td><td>17</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2013-12-12</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/lesh.png" alt="A hero portrait of Leshrac." />Leshrac</p></td><td>5</td><td>2</td><td>7</td><td>5</td><td>10</td><td>37</td><td>27</td><td>7</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-05-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/lich.png" alt="A hero portrait of Lich." />Lich</p></td><td>5</td><td>3</td><td>13</td><td>10</td><td>12</td><td>64</td><td>52</td><td>13</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/ls.png" alt="A hero portrait of Lifestealer." />Lifestealer</p></td><td>4</td><td>4</td><td>6</td><td>2</td><td>16</td><td>30</td><td>14</td><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-12-02</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/lina.png" alt="A hero portrait of Lina." />Lina</p></td><td>4</td><td>9</td><td>16</td><td>7</td><td>39</td><td>73</td><td>34</td><td>18</td><td>1</td><td>1</td><td>0</td><td>2</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/lion.png" alt="A hero portrait of Lion." />Lion</p></td><td>5</td><td>3</td><td>7</td><td>4</td><td>21</td><td>45</td><td>24</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/ld.png" alt="A hero portrait of Lone Druid." />Lone Druid</p></td><td>7</td><td>4</td><td>7</td><td>3</td><td>33</td><td>51</td><td>18</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-03-28</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/luna.png" alt="A hero portrait of Luna." />Luna</p></td><td>5</td><td>4</td><td>21</td><td>17</td><td>23</td><td>113</td><td>90</td><td>23</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-06-28</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/lycan.png" alt="A hero portrait of Lycan." />Lycan</p></td><td>7</td><td>2</td><td>17</td><td>15</td><td>16</td><td>93</td><td>77</td><td>13</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-03-22</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/magnus.png" alt="A hero portrait of Magnus." />Magnus</p></td><td>5</td><td>2</td><td>12</td><td>10</td><td>11</td><td>63</td><td>52</td><td>13</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-10-04</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/mars.png" alt="A hero portrait of Mars." />Mars</p></td><td>4</td><td>0</td><td>2</td><td>2</td><td>0</td><td>11</td><td>11</td><td>3</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2019-03-05</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/medusa.png" alt="A hero portrait of Medusa." />Medusa</p></td><td>5</td><td>1</td><td>5</td><td>4</td><td>7</td><td>29</td><td>22</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-01-10</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/meepo.png" alt="A hero portrait of Meepo." />Meepo</p></td><td>6</td><td>4</td><td>10</td><td>6</td><td>22</td><td>59</td><td>37</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-09-20</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/mirana.png" alt="A hero portrait of Mirana." />Mirana</p></td><td>7</td><td>6</td><td>13</td><td>7</td><td>45</td><td>103</td><td>58</td><td>15</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/mk.png" alt="A hero portrait of Monkey King." />Monkey King</p></td><td>4</td><td>0</td><td>4</td><td>4</td><td>0</td><td>19</td><td>19</td><td>5</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2016-12-12</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/morph.png" alt="A hero portrait of Morphling." />Morphling</p></td><td>5</td><td>9</td><td>14</td><td>5</td><td>37</td><td>62</td><td>25</td><td>12</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/naga.png" alt="A hero portrait of Naga Siren." />Naga Siren</p></td><td>5</td><td>6</td><td>16</td><td>10</td><td>33</td><td>73</td><td>40</td><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-07-19</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/np.png" alt="A hero portrait of Nature's Prophet." />Nature's Prophet</p></td><td>7</td><td>11</td><td>17</td><td>6</td><td>86</td><td>129</td><td>43</td><td>18</td><td>3</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2011-04-20</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/necro.png" alt="A hero portrait of Necrophos." />Necrophos</p></td><td>5</td><td>4</td><td>13</td><td>9</td><td>22</td><td>70</td><td>48</td><td>14</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/ns.png" alt="A hero portrait of Night Stalker." />Night Stalker</p></td><td>5</td><td>0</td><td>6</td><td>6</td><td>0</td><td>32</td><td>32</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-06-11</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/nyx.png" alt="A hero portrait of Nyx Assassin." />Nyx Assassin</p></td><td>4</td><td>6</td><td>16</td><td>10</td><td>23</td><td>67</td><td>44</td><td>17</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-07-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/magi.png" alt="A hero portrait of Ogre Magi." />Ogre Magi</p></td><td>5</td><td>1</td><td>5</td><td>4</td><td>10</td><td>34</td><td>24</td><td>7</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2012-05-24</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/omni.png" alt="A hero portrait of Omniknight." />Omniknight</p></td><td>6</td><td>6</td><td>12</td><td>6</td><td>41</td><td>74</td><td>33</td><td>12</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-11-03</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/oracle.png" alt="A hero portrait of Oracle." />Oracle</p></td><td>4</td><td>0</td><td>5</td><td>5</td><td>0</td><td>22</td><td>22</td><td>6</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2014-11-20</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/od.png" alt="A hero portrait of Outworld Destroyer." />Outworld Destroyer</p></td><td>4</td><td>2</td><td>7</td><td>5</td><td>12</td><td>35</td><td>23</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-02-16</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/pango.png" alt="A hero portrait of Pangolier." />Pangolier</p></td><td>4</td><td>0</td><td>4</td><td>4</td><td>0</td><td>17</td><td>17</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2017-10-31</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/pa.png" alt="A hero portrait of Phantom Assassin." />Phantom Assassin</p></td><td>5</td><td>5</td><td>17</td><td>12</td><td>34</td><td>98</td><td>64</td><td>20</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2012-06-11</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/pl.png" alt="A hero portrait of Phantom Lancer." />Phantom Lancer</p></td><td>5</td><td>8</td><td>10</td><td>2</td><td>46</td><td>60</td><td>14</td><td>12</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-05-03</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/phoenix.png" alt="A hero portrait of Phoenix." />Phoenix</p></td><td>3</td><td>0</td><td>6</td><td>6</td><td>0</td><td>20</td><td>20</td><td>7</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2014-01-29</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/puck.png" alt="A hero portrait of Puck." />Puck</p></td><td>3</td><td>3</td><td>9</td><td>6</td><td>13</td><td>35</td><td>22</td><td>12</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/pudge.png" alt="A hero portrait of Pudge." />Pudge</p></td><td>7</td><td>6</td><td>26</td><td>20</td><td>60</td><td>182</td><td>122</td><td>26</td><td>2</td><td>1</td><td>1</td><td>2</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/pugna.png" alt="A hero portrait of Pugna." />Pugna</p></td><td>7</td><td>3</td><td>4</td><td>1</td><td>26</td><td>41</td><td>15</td><td>6</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-05-20</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/qwop.png" alt="A hero portrait of Queen of Pain." />Queen of Pain</p></td><td>4</td><td>8</td><td>14</td><td>6</td><td>36</td><td>64</td><td>28</td><td>16</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2011-10-20</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/razor.png" alt="A hero portrait of Razor." />Razor</p></td><td>5</td><td>2</td><td>9</td><td>7</td><td>13</td><td>49</td><td>36</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/riki.png" alt="A hero portrait of Riki." />Riki</p></td><td>6</td><td>7</td><td>18</td><td>11</td><td>48</td><td>83</td><td>35</td><td>14</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-10-13</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/rubick.png" alt="A hero portrait of Rubick." />Rubick</p></td><td>4</td><td>6</td><td>18</td><td>12</td><td>28</td><td>84</td><td>56</td><td>21</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2012-06-20</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/sk.png" alt="A hero portrait of Sand King." />Sand King</p></td><td>5</td><td>4</td><td>11</td><td>7</td><td>23</td><td>60</td><td>37</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/sd.png" alt="A hero portrait of Shadow Demon." />Shadow Demon</p></td><td>4</td><td>1</td><td>6</td><td>5</td><td>5</td><td>27</td><td>22</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-03-15</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/sf.png" alt="A hero portrait of Shadow Fiend." />Shadow Fiend</p></td><td>3</td><td>0</td><td>6</td><td>6</td><td>0</td><td>20</td><td>20</td><td>7</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2011-05-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/ss.png" alt="A hero portrait of Shadow Shaman." />Shadow Shaman</p></td><td>6</td><td>4</td><td>11</td><td>7</td><td>23</td><td>63</td><td>40</td><td>11</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/silencer.png" alt="A hero portrait of Silencer." />Silencer</p></td><td>6</td><td>4</td><td>11</td><td>7</td><td>28</td><td>74</td><td>46</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-01-12</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/sm.png" alt="A hero portrait of Skywrath Mage." />Skywrath Mage</p></td><td>6</td><td>5</td><td>15</td><td>10</td><td>38</td><td>100</td><td>62</td><td>17</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2013-04-19</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/slardar.png" alt="A hero portrait of Slardar." />Slardar</p></td><td>4</td><td>2</td><td>8</td><td>6</td><td>12</td><td>43</td><td>31</td><td>11</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-01-18</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/slark.png" alt="A hero portrait of Slark." />Slark</p></td><td>5</td><td>4</td><td>9</td><td>5</td><td>29</td><td>63</td><td>34</td><td>13</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-11-15</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/snap.png" alt="A hero portrait of Snapfire." />Snapfire</p></td><td>5</td><td>0</td><td>1</td><td>1</td><td>0</td><td>5</td><td>5</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2019-11-26</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/sniper.png" alt="A hero portrait of Sniper." />Sniper</p></td><td>5</td><td>6</td><td>19</td><td>13</td><td>40</td><td>107</td><td>67</td><td>21</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2011-04-30</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/spectre.png" alt="A hero portrait of Spectre." />Spectre</p></td><td>5</td><td>4</td><td>10</td><td>6</td><td>24</td><td>57</td><td>33</td><td>11</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>2011-06-17</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/sb.png" alt="A hero portrait of Spirit Breaker." />Spirit Breaker</p></td><td>6</td><td>5</td><td>13</td><td>8</td><td>27</td><td>80</td><td>53</td><td>13</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-01-12</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/storm.png" alt="A hero portrait of Storm Spirit." />Storm Spirit</p></td><td>3</td><td>2</td><td>11</td><td>9</td><td>9</td><td>39</td><td>30</td><td>13</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/sven.png" alt="A hero portrait of Sven." />Sven</p></td><td>6</td><td>8</td><td>21</td><td>13</td><td>62</td><td>150</td><td>88</td><td>25</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/techies.png" alt="A hero portrait of Techies." />Techies</p></td><td>7</td><td>0</td><td>6</td><td>6</td><td>0</td><td>41</td><td>41</td><td>6</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2014-09-04</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/ta.png" alt="A hero portrait of Templar Assassin." />Templar Assassin</p></td><td>4</td><td>6</td><td>19</td><td>13</td><td>22</td><td>56</td><td>34</td><td>14</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-07-12</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/tb.png" alt="A hero portrait of Terrorblade." />Terrorblade</p></td><td>5</td><td>0</td><td>5</td><td>5</td><td>1</td><td>28</td><td>27</td><td>6</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2014-01-29</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/tide.png" alt="A hero portrait of Tidehunter." />Tidehunter</p></td><td>6</td><td>3</td><td>11</td><td>8</td><td>32</td><td>85</td><td>53</td><td>14</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/timber.png" alt="A hero portrait of Timbersaw." />Timbersaw</p></td><td>6</td><td>1</td><td>14</td><td>13</td><td>5</td><td>87</td><td>82</td><td>15</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2012-12-13</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/tinker.png" alt="A hero portrait of Tinker." />Tinker</p></td><td>6</td><td>0</td><td>3</td><td>3</td><td>1</td><td>18</td><td>17</td><td>3</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-06-02</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/tiny.png" alt="A hero portrait of Tiny." />Tiny</p></td><td>5</td><td>1</td><td>7</td><td>6</td><td>5</td><td>35</td><td>30</td><td>7</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-02-19</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/treant.png" alt="A hero portrait of Treant Protector." />Treant Protector</p></td><td>4</td><td>0</td><td>10</td><td>10</td><td>0</td><td>43</td><td>43</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-05-17</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/troll.png" alt="A hero portrait of Troll Warlord." />Troll Warlord</p></td><td>4</td><td>0</td><td>4</td><td>4</td><td>0</td><td>18</td><td>18</td><td>5</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2013-01-24</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/tusk.png" alt="A hero portrait of Tusk." />Tusk</p></td><td>7</td><td>3</td><td>9</td><td>6</td><td>25</td><td>68</td><td>43</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2013-02-14</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/ul.png" alt="A hero portrait of Underlord." />Underlord</p></td><td>3</td><td>0</td><td>3</td><td>3</td><td>0</td><td>11</td><td>11</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2016-08-23</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/undy.png" alt="A hero portrait of Undying." />Undying</p></td><td>5</td><td>0</td><td>11</td><td>11</td><td>2</td><td>44</td><td>42</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-07-05</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/ursa.png" alt="A hero portrait of Ursa." />Ursa</p></td><td>5</td><td>7</td><td>12</td><td>5</td><td>30</td><td>48</td><td>18</td><td>10</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-12-15</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/vs.png" alt="A hero portrait of Vengeful Spirit." />Vengeful Spirit</p></td><td>4</td><td>2</td><td>11</td><td>9</td><td>10</td><td>48</td><td>38</td><td>12</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/veno.png" alt="A hero portrait of Venomancer." />Venomancer</p></td><td>5</td><td>1</td><td>8</td><td>7</td><td>5</td><td>41</td><td>36</td><td>8</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-04-09</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/viper.png" alt="A hero portrait of Viper." />Viper</p></td><td>3</td><td>0</td><td>5</td><td>5</td><td>0</td><td>20</td><td>20</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-02-19</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/visage.png" alt="A hero portrait of Visage." />Visage</p></td><td>3</td><td>0</td><td>5</td><td>5</td><td>0</td><td>16</td><td>16</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2012-07-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/vs.png" alt="A hero portrait of Void Spirit." />Void Spirit</p></td><td>4</td><td>0</td><td>1</td><td>1</td><td>0</td><td>4</td><td>4</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2019-11-26</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/warlock.png" alt="A hero portrait of Warlock." />Warlock</p></td><td>8</td><td>2</td><td>11</td><td>9</td><td>28</td><td>99</td><td>71</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-11-11</td></tr>
+                    <tr><td><p><img class="imghero agi" src="images/weaver.png" alt="A hero portrait of Weaver." />Weaver</p></td><td>5</td><td>5</td><td>9</td><td>4</td><td>23</td><td>45</td><td>22</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2011-06-10</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/wr.png" alt="A hero portrait of Windranger." />Windranger</p></td><td>5</td><td>7</td><td>16</td><td>9</td><td>50</td><td>92</td><td>42</td><td>18</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/ww.png" alt="A hero portrait of Winter Wyvern." />Winter Wyvern</p></td><td>2</td><td>0</td><td>8</td><td>8</td><td>0</td><td>17</td><td>17</td><td>9</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2015-02-12</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/wd.png" alt="A hero portrait of Witch Doctor." />Witch Doctor</p></td><td>6</td><td>3</td><td>16</td><td>13</td><td>28</td><td>93</td><td>65</td><td>16</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
+                    <tr><td><p><img class="imghero str" src="images/wk.png" alt="A hero portrait of Wraith King." />Wraith King</p></td><td>6</td><td>4</td><td>16</td><td>12</td><td>30</td><td>109</td><td>79</td><td>18</td><td>1</td><td>1</td><td>0</td><td>2</td><td>0</td><td>2011-10-20</td></tr>
+                    <tr><td><p><img class="imghero int" src="images/zeus.png" alt="A hero portrait of Zeus." />Zeus</p></td><td>5</td><td>0</td><td>3</td><td>3</td><td>0</td><td>13</td><td>13</td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2010-11-01</td></tr>
 
                 </table>
             </div>
-
-
         </article>
 
         <article id="summary">
@@ -417,7 +490,7 @@
                     <li>XXXX - YYYY</li>
                 </ul>
             </div>
-            
+
 
             <h3>Average Total Items for Strength Heroes</h3>
             <div class="brighten">
@@ -430,6 +503,16 @@
             </div>
 
             <h3>Average Total Items for Intelligence Heroes</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Top 5 Most Inflated Heroes</h3>
+            <div class="brighten">
+                <p>PLACEHOLDER</p>
+            </div>
+
+            <h3>Top 5 Least Inflated Heroes</h3>
             <div class="brighten">
                 <p>PLACEHOLDER</p>
             </div>
@@ -451,7 +534,70 @@
         </article>
 
     </main>
-
-    <script src="js/script.js"></script>
+    
+    <script>
+     function sortTable(n) {
+    var table,
+        rows,
+        switching,
+        i,
+        x,
+        y,
+        shouldSwitch,
+        dir,
+        switchcount = 0;
+    table = document.getElementById("myTable");
+    switching = true;
+    //Set the sorting direction to ascending:
+    dir = "asc";
+    /*Make a loop that will continue until
+    no switching has been done:*/
+    while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.getElementsByTagName("TR");
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < rows.length - 1; i++) { //Change i=0 if you have the header th a separate table.
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /*Get the two elements you want to compare,
+            one from current row and one from the next:*/
+            x = rows[i].getElementsByTagName("TD")[n];
+            y = rows[i + 1].getElementsByTagName("TD")[n];
+            /*check if the two rows should switch place,
+            based on the direction, asc or desc:*/
+            if (dir == "asc") {
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    //if so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            } else if (dir == "desc") {
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    //if so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        if (shouldSwitch) {
+            /*If a switch has been marked, make the switch
+            and mark that a switch has been done:*/
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            //Each time a switch is done, increase this count by 1:
+            switchcount++;
+        } else {
+            /*If no switching has been done AND the direction is "asc",
+            set the direction to "desc" and run the while loop again.*/
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+}
+    </script>
 </body>
 </html>
